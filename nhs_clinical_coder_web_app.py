@@ -1564,15 +1564,7 @@ def render_index(status=None, error=False, username=None, user_role=None):
               </div>
             </div>
 
-            <div class="nhsuk-card hidden" data-stream-panel>
-              <div class="nhsuk-card__content">
-                <h3 data-stream-status>Waiting to start&hellip;</h3>
-                <div class="nhsuk-progress-bar">
-                  <div class="nhsuk-progress-bar__fill" data-progress-fill></div>
-                </div>
-                <ul class="nhsuk-stream-list" data-stream-list></ul>
-              </div>
-            </div>
+            {render_preview()}
 
             <div class="nhsuk-card" style="border:none;padding:0;background:none;margin-bottom:24px;">
               <img src="/static/endoscopy-recovery-area.jpg"
@@ -1583,7 +1575,15 @@ def render_index(status=None, error=False, username=None, user_role=None):
           </div>
 
           <div>
-            {render_preview()}
+            <div class="nhsuk-card hidden" data-stream-panel>
+              <div class="nhsuk-card__content">
+                <h3 data-stream-status>Waiting to start&hellip;</h3>
+                <div class="nhsuk-progress-bar">
+                  <div class="nhsuk-progress-bar__fill" data-progress-fill></div>
+                </div>
+                <ul class="nhsuk-stream-list" data-stream-list></ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
