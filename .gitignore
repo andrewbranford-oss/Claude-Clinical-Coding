@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.installed.cfg
+lib/
+lib64/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Output / uploads
+web_outputs/
+web_uploads/
+*.csv
+*.xlsm
+*.xlsx
+
+# Environment variables
+.env
+.env.*
+*.secret
+
+# Logs
+*.log
