@@ -6,7 +6,7 @@
 
 Patient and episode data may be supplied as an approved `.xlsm` workbook for batch endoscopy coding. Treat the workbook as patient-identifiable clinical data, do not execute embedded macros, and retain workbook name, worksheet, row number, and relevant column headings as evidence provenance.
 
-All proposed ICD-10 and OPCS-4 codes must be checked against the NHS England Classifications Browser at https://classbrowser.nhs.uk/ using the classification version appropriate to the episode date before coder review or submission.
+All proposed ICD-10 and OPCS-4 codes must be checked against the [NHS England Classifications Browser](https://classbrowser.nhs.uk/) using the classification version appropriate to the episode date before coder review or submission.
 
 ---
 

@@ -15,7 +15,7 @@ This document provides the operational and organizational context for the NHS Cl
 - Integrates with core hospital systems: PAS, EPR, digital dictation, pathology/radiology, and local data warehouse.
 - Can ingest approved patient-data `.xlsm` workbooks for spreadsheet-led batches, with macros disabled and workbook/worksheet/row provenance retained for audit.
 - Utilizes NHS Digital/NHS England reference data for ICD-10 and OPCS-4 coding.
-- Uses the NHS England Classifications Browser at https://classbrowser.nhs.uk/ as a controlled web reference check for ICD-10 5th Edition and OPCS-4 code verification, selecting the classification version appropriate to the episode date.
+- Uses the NHS England Classifications Browser at [classbrowser.nhs.uk](https://classbrowser.nhs.uk/) as a controlled web reference check for ICD-10 5th Edition and OPCS-4 code verification, selecting the classification version appropriate to the episode date.
 - Supports workflow orchestration, audit trails, exception handling, and escalation.
 
 ## Workflow Context
@@ -44,4 +44,4 @@ This document provides the operational and organizational context for the NHS Cl
 - NHS Digital Clinical Coding Standards
 - Local Trust Coding Policies
 - NHS Data Dictionary
-- NHS England Classifications Browser: https://classbrowser.nhs.uk/
+- [NHS England Classifications Browser](https://classbrowser.nhs.uk/)

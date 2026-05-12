@@ -12,7 +12,7 @@ This document outlines the essential skills and competencies required to perform
 - **ICD-10 Coding Proficiency**
   - Accurate assignment of diagnostic codes using ICD-10 (5th Edition)
   - Understanding of dagger/asterisk conventions, sequencing, and coding rules
-  - Ability to verify candidate codes in the NHS England Classifications Browser at https://classbrowser.nhs.uk/
+  - Ability to verify candidate codes in the [NHS England Classifications Browser](https://classbrowser.nhs.uk/)
 
 - **OPCS-4 Coding Proficiency**
   - Accurate assignment of procedure codes using the OPCS-4 version mandated for the episode date
@@ -62,6 +62,6 @@ This document outlines the essential skills and competencies required to perform
 ## References
 - NHS Digital Clinical Coding Standards
 - ICD-10 and OPCS-4 Reference Manuals
-- NHS England Classifications Browser: https://classbrowser.nhs.uk/
+- [NHS England Classifications Browser](https://classbrowser.nhs.uk/)
 - NHS Data Dictionary
 - Local Trust Coding Policies

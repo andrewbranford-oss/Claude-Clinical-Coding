@@ -78,7 +78,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 - **FR-11** Symptom codes must only be assigned when no definitive diagnosis has been established.
 - **FR-12** 'Presumed', 'probable', or 'treat as' diagnoses documented by the responsible clinician must be coded as confirmed.
 - **FR-13** Anticoagulant use (Warfarin, Rivaroxaban, Dabigatran, Apixaban, Edoxaban, Heparin) must always be coded to **Z92.1**.
-- **FR-14** All proposed ICD-10 and OPCS-4 codes must be verified against the NHS England Classifications Browser (https://classbrowser.nhs.uk/) using the classification version appropriate to the episode date.
+- **FR-14** All proposed ICD-10 and OPCS-4 codes must be verified against the [NHS England Classifications Browser](https://classbrowser.nhs.uk/) using the classification version appropriate to the episode date.
 
 #### Endoscopy-Specific Code Assignment
 

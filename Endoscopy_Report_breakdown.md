@@ -3,7 +3,7 @@
 ## Patient Data Input
 Patient and episode data may be supplied as an approved `.xlsm` workbook for batch coding review. Treat the workbook as patient-identifiable clinical data, do not execute embedded macros, and retain workbook name, worksheet, row number, and relevant column headings as source evidence for each extracted field.
 
-When codes are proposed from the endoscopy report or workbook data, verify ICD-10 and OPCS-4 candidates against the NHS England Classifications Browser at https://classbrowser.nhs.uk/ using the version appropriate to the episode date.
+When codes are proposed from the endoscopy report or workbook data, verify ICD-10 and OPCS-4 candidates against the [NHS England Classifications Browser](https://classbrowser.nhs.uk/) using the version appropriate to the episode date.
 
 ---
 
