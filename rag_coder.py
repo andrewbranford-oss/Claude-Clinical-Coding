@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 
 import anthropic
 from dotenv import load_dotenv
@@ -73,7 +74,7 @@ senior coder should verify.
 or multiple valid coding approaches exist. Human review is essential.
 - Below 0.50: Insufficient information to code with any confidence.
 
-Set "human_review_required" to true whenever confidence is below 0.85.
+Set "human_review_required" to true whenever confidence is below 0.80.
 
 Respond ONLY with valid JSON — no markdown fences, no prose outside the object.\
 """
@@ -180,7 +181,7 @@ Return this exact JSON structure:
     icd10_codes: list[str] = result.get("icd10_codes") or []
     opcs4_codes: list[str] = result.get("opcs4_codes") or []
     confidence = float(result.get("confidence", 0.75))
-    review_flag = "Yes" if result.get("human_review_required") or confidence < 0.85 else "No"
+    review_flag = "Yes" if result.get("human_review_required") or confidence < 0.80 else "No"
 
     classbrowser_summary = (
         "Verified via NHS Classifications Browser: " + "; ".join(classbrowser_lookups)
@@ -204,6 +205,11 @@ Return this exact JSON structure:
         "Source Worksheet": record.get("source_worksheet", ""),
         "Source Row": record.get("source_row", ""),
         "Source Columns": record.get("source_columns", ""),
+        "Coded Timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "Specialty": "Endoscopy",
+        "Case Type": "Day Case",
+        "ICD-10 Version": "ICD-10 5th Edition",
+        "OPCS-4 Version": "OPCS-4.11",
     }
 
 

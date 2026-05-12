@@ -151,7 +151,7 @@ Compares agent output against a gold-standard coded dataset and generates `eval_
 | Standard | Detail |
 | -------- | ------ |
 | Diagnostic coding | ICD-10 5th Edition (NHS England version) |
-| Procedure coding | OPCS-4.10 (NHS England current version) |
+| Procedure coding | OPCS-4.11 (NHS England current version) |
 | Coding rules | NHS Clinical Coding Standards (NCCS) |
 | Code validation | NHS England Classifications Browser (classbrowser.nhs.uk) |
 | Data governance | GDPR, NHS Data Security and Protection Toolkit |

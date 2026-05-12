@@ -1,5 +1,6 @@
 import csv
 import re
+import time
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
@@ -269,6 +270,11 @@ FIELDNAMES = [
     "Source Worksheet",
     "Source Row",
     "Source Columns",
+    "Coded Timestamp",
+    "Specialty",
+    "Case Type",
+    "ICD-10 Version",
+    "OPCS-4 Version",
 ]
 
 
@@ -559,6 +565,11 @@ def code_record(record):
         "Source Worksheet": record["source_worksheet"],
         "Source Row": record["source_row"],
         "Source Columns": record["source_columns"],
+        "Coded Timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "Specialty": "Endoscopy",
+        "Case Type": "Day Case",
+        "ICD-10 Version": "ICD-10 5th Edition",
+        "OPCS-4 Version": "OPCS-4.11",
     }
 
 

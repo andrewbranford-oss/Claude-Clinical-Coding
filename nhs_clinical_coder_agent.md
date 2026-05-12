@@ -1,6 +1,5 @@
 # NHS Clinical Coder – Workflow Orchestration Agent
 
-
 [← Context Overview](nhs_clinical_coder_context.md) | [Skills & Competencies →](nhs_clinical_coder_skills.md)
 
 ## Role & Responsibilities
@@ -84,7 +83,7 @@ The agent handles end-to-end coding for standard episodes. The following conditi
 ### Step 3: Code Assignment
 
 - Map identified clinical concepts to ICD-10 (5th edition) diagnostic codes
-- Map procedures to OPCS-4.10 codes
+- Map procedures to OPCS-4.11 codes
 - Apply sequencing rules: primary diagnosis first, followed by comorbidities and complications
 - Apply dual coding where applicable (e.g. dagger/asterisk convention for ICD-10)
 
@@ -130,7 +129,7 @@ The agent handles end-to-end coding for standard episodes. The following conditi
 
 ### OPCS-4 (Classification of Interventions and Procedures, version 4.10)
 
-- **Edition in use:** OPCS-4.10 (current NHS England version)
+- **Edition in use:** OPCS-4.11 (current NHS England version)
 - **Principal procedure:** The main operative procedure performed during the episode
 - **Additional procedures:** All subsidiary or concurrent procedures coded in full
 - **Laterality codes:** Applied where applicable (Z codes)
@@ -175,17 +174,17 @@ The agent handles end-to-end coding for standard episodes. The following conditi
 
 ## Glossary
 
-| Term              | Definition                                                                                     |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| ICD-10            | International Classification of Diseases, 10th Revision — used for diagnostic coding          |
-| OPCS-4            | Classification of Interventions and Procedures — used for procedure coding                    |
-| HRG               | Healthcare Resource Group — used for NHS tariff and payment purposes                          |
-| SUS               | Secondary Uses Service — NHS national data submission platform                                |
-| PAS               | Patient Administration System                                                                  |
-| EPR               | Electronic Patient Record                                                                      |
-| NCCS              | NHS Clinical Coding Standards                                                                  |
-| Episode           | A single period of care under a responsible clinician                                          |
-| Confidence Score  | Numeric value representing certainty of code assignment; below threshold triggers human review |
-| Data Minimization | Principle of collecting and retaining only the minimum data necessary for the task             |
-| Audit Trail       | Record of all actions, amendments, and decisions for traceability                              |
-| Feedback Loop     | Mechanism for learning from coder amendments to improve agent performance                      |
+| Term | Definition |
+| ---- | ---------- |
+| ICD-10 | International Classification of Diseases, 10th Revision - used for diagnostic coding |
+| OPCS-4 | Classification of Interventions and Procedures - used for procedure coding |
+| HRG | Healthcare Resource Group - used for NHS tariff and payment purposes |
+| SUS | Secondary Uses Service - NHS national data submission platform |
+| PAS | Patient Administration System |
+| EPR | Electronic Patient Record |
+| NCCS | NHS Clinical Coding Standards |
+| Episode | A single period of care under a responsible clinician |
+| Confidence Score | Numeric value representing certainty of code assignment; below threshold triggers human review |
+| Data Minimization | Principle of collecting and retaining only the minimum data necessary for the task |
+| Audit Trail | Record of all actions, amendments, and decisions for traceability |
+| Feedback Loop | Mechanism for learning from coder amendments to improve agent performance |

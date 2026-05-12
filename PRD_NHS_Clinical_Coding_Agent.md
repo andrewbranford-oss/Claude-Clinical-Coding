@@ -1,5 +1,4 @@
-# Product Requirements Document
-# NHS Clinical Coding AI Agent
+# Product Requirements Document: NHS Clinical Coding AI Agent
 
 **Version:** 1.0  
 **Date:** 2026-05-02  
@@ -34,7 +33,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 ## 2. Goals & Success Metrics
 
 | Goal | Metric | Target |
-|------|--------|--------|
+| ---- | ------ | ------ |
 | Reduce manual coding time | Average time per coded episode | ≥ 40% reduction vs. baseline |
 | Maintain coding accuracy | Code accuracy rate vs. qualified coder benchmark | ≥ 95% on auto-approved cases |
 | Ensure safe escalation | % of sub-threshold cases correctly routed to human review | 100% |
@@ -46,7 +45,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 ## 3. Users & Stakeholders
 
 | Role | Interaction |
-|------|-------------|
+| ---- | ----------- |
 | Clinical Coder | Reviews agent suggestions, amends codes, approves episodes |
 | Coding Manager | Monitors workflow queue, manages escalations, views reporting |
 | Senior Coder | Signs off complex or escalated cases |
@@ -73,7 +72,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 ### 4.3 Code Assignment
 
 - **FR-07** Diagnostic codes must be assigned using ICD-10 5th Edition (NHS England version).
-- **FR-08** Procedure codes must be assigned using OPCS-4.10 (current NHS England version).
+- **FR-08** Procedure codes must be assigned using OPCS-4.11 (current NHS England version).
 - **FR-09** Primary diagnosis sequencing must follow NHS Clinical Coding Standards (NCCS): the condition chiefly responsible for the episode is first.
 - **FR-10** Dagger/asterisk (†/+) dual coding must be applied where the underlying disease manifests in a specific organ.
 - **FR-11** Symptom codes must only be assigned when no definitive diagnosis has been established.
@@ -130,7 +129,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 - **FR-38** Every coding action must be logged with a minimum of 20 fields:
 
 | Field | Field |
-|-------|-------|
+| ----- | ----- |
 | Patient ID | Episode ID |
 | Agent / Coder ID | Timestamp |
 | Action taken | Confidence score |
@@ -152,7 +151,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 ## 5. Non-Functional Requirements
 
 | ID | Requirement |
-|----|-------------|
+| -- | ----------- |
 | NFR-01 | All processing of patient data must comply with GDPR, the Data Security and Protection Toolkit, and NHS data minimisation principles |
 | NFR-02 | Only data necessary for coding and audit purposes may be retained |
 | NFR-03 | All outputs must be auditable and traceable to source documentation |
@@ -165,7 +164,7 @@ Out of scope for v1: real-time PAS/EPR integration, direct SUS submission, speci
 ## 6. System Integrations
 
 | System | Purpose | Integration Type |
-|--------|---------|-----------------|
+| ------ | ------- | ---------------- |
 | PAS (Patient Administration System) | Episode demographics, admission/discharge dates | API / HL7 feed (future) |
 | EPR (Electronic Patient Record) | Clinical documentation | API / document retrieval (future) |
 | Digital Transcription | Operation notes, clinic letters | Document ingestion |
@@ -207,9 +206,9 @@ The web application must be production-grade, accessible, and appropriate for a 
 ## 8. Coding Standards Reference
 
 | Standard | Version | Usage |
-|----------|---------|-------|
+| -------- | ------- | ----- |
 | ICD-10 | 5th Edition (NHS England) | Diagnostic coding |
-| OPCS-4 | Version 4.10 | Procedure coding |
+| OPCS-4 | Version 4.11 | Procedure coding |
 | NHS Clinical Coding Standards (NCCS) | Current financial year | Sequencing, rules |
 | NHS Data Dictionary | Current | Validation |
 | NHS England Classifications Browser | classbrowser.nhs.uk | Code verification |
@@ -230,7 +229,7 @@ The web application must be production-grade, accessible, and appropriate for a 
 ## 10. Glossary
 
 | Term | Definition |
-|------|-----------|
+| ---- | ---------- |
 | ICD-10 | International Classification of Diseases, 10th Revision — diagnostic coding |
 | OPCS-4 | Classification of Interventions and Procedures — procedure coding |
 | HRG | Healthcare Resource Group — NHS tariff and payment |
@@ -254,7 +253,7 @@ The web application must be production-grade, accessible, and appropriate for a 
 ## 11. Related Documents
 
 | Document | Description |
-|----------|-------------|
+| -------- | ----------- |
 | [nhs_clinical_coder_context.md](nhs_clinical_coder_context.md) | Organisational and technical context |
 | [nhs_clinical_coder_agent.md](nhs_clinical_coder_agent.md) | Workflow orchestration agent specification |
 | [nhs_clinical_coder_skills.md](nhs_clinical_coder_skills.md) | Required coder skills and competencies |
